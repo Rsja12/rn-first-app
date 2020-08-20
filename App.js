@@ -9,7 +9,10 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>{text}</Text>
-      <Button title='Change Text' />
+      <Button 
+        title='Change Text'
+        onPress={() => setText('Hola Mundo!')} 
+      />
       <StatusBar style="auto" />
     </View>
   );
